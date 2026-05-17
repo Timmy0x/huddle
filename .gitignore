@@ -1,0 +1,8 @@
+# 10x — generated and app-private files (not tracked)
+tenx/
+ios/DerivedData/
+*.xcodeproj/
+build/
+.derivedData*/
+.build*/
+**/.DS_Store
