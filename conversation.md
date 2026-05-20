@@ -121,15 +121,3 @@ The onboarding flow is in place — 11 steps from welcome through name capture. 
 ### 10x
 
 Plan saved with Court Orange locked in. Ready for the Start Building confirmation.
-
----
-
-### You
-
-use the search tool to look for calai
-
----
-
-### 10x
-
-Web search is currently unavailable (402 from the search provider). Want me to try again in a moment, or is there something specific about Cal AI's onboarding you'd like me to apply to Huddle?
