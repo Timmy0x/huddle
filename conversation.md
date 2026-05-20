@@ -103,3 +103,33 @@ The simulator is still showing the cached previous build. The new flow will appe
 11. **Name capture** — "What should we call you?" with a "Now it's time to get in the game" framing line
 
 Persistent progress bar across all quiz steps, back button on every screen, sticky CTA with a fade gradient, and the user's quiz answers actually wire into the store — selected sports become the default Discover filter, and the chosen skill/name/handle update the profile.
+
+---
+
+### You
+
+test
+
+---
+
+### 10x
+
+The onboarding flow is in place — 11 steps from welcome through name capture. What would you like to test or change?
+
+---
+
+### 10x
+
+Plan saved with Court Orange locked in. Ready for the Start Building confirmation.
+
+---
+
+### You
+
+use the search tool to look for calai
+
+---
+
+### 10x
+
+Web search is currently unavailable (402 from the search provider). Want me to try again in a moment, or is there something specific about Cal AI's onboarding you'd like me to apply to Huddle?
