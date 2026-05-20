@@ -10,14 +10,14 @@ struct ContentView: View {
     var body: some View {
         Group {
             Group {
-                if store.hasCompletedOnboarding {
+                if store.hasSeenLocationPriming {
                     mainShell
                 } else {
-                    OnboardingFlow()
+                    LocationPrimingView()
                         .transition(.opacity.combined(with: .move(edge: .bottom)))
                 }
             }
-            .animation(.easeInOut(duration: 0.35), value: store.hasCompletedOnboarding)
+            .animation(.easeInOut(duration: 0.35), value: store.hasSeenLocationPriming)
         }
         .trackView("ContentView")
     }

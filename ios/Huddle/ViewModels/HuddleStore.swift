@@ -10,68 +10,6 @@ final class HuddleStore {
 
     var currentUserId: UUID
     var hasSeenLocationPriming: Bool = false
-    var hasCompletedOnboarding: Bool = false
-
-    // Onboarding capture
-    var onboardingSports: Set<Sport> = []
-    var onboardingSkill: SkillLevel = .casual
-    var onboardingFrequency: PlayFrequency = .weekly
-    var onboardingNeighborhood: String = ""
-    var notificationsPrimed: Bool = false
-    var locationPrimed: Bool = false
-
-    enum PlayFrequency: String, CaseIterable, Identifiable {
-        case rarely = "A few times a year"
-        case monthly = "Once a month"
-        case weekly  = "Every week"
-        case daily   = "Almost every day"
-        var id: String { rawValue }
-        var emoji: String {
-            switch self {
-            case .rarely:  "🌱"
-            case .monthly: "🗓️"
-            case .weekly:  "🔥"
-            case .daily:   "🏆"
-            }
-        }
-    }
-
-    func completeOnboarding(name: String, handle: String) {
-        if var me = users.first(where: { $0.id == currentUserId }) {
-            let trimmed = name.trimmingCharacters(in: .whitespaces)
-            if !trimmed.isEmpty { me.name = trimmed }
-            let h = handle.trimmingCharacters(in: .whitespaces)
-            if !h.isEmpty { me.handle = h.hasPrefix("@") ? h : "@\(h)" }
-            if !onboardingSports.isEmpty { me.sports = Sport.allCases.filter { onboardingSports.contains($0) } }
-            me.skill = onboardingSkill
-            if let idx = users.firstIndex(where: { $0.id == currentUserId }) {
-                users[idx] = me
-            }
-        }
-        if !onboardingSports.isEmpty {
-            selectedSports = onboardingSports
-        }
-        hasCompletedOnboarding = true
-        hasSeenLocationPriming = true
-    }
-
-    // Personalized count for reveal screen
-    var personalizedGameCount: Int {
-        let sports = onboardingSports.isEmpty ? Set(Sport.allCases) : onboardingSports
-        return games.filter {
-            sports.contains($0.sport) && $0.endTime >= Date() &&
-            $0.startTime.timeIntervalSinceNow < 7 * 86400
-        }.count
-    }
-
-    var personalizedSampleGames: [Game] {
-        let sports = onboardingSports.isEmpty ? Set(Sport.allCases) : onboardingSports
-        return games
-            .filter { sports.contains($0.sport) && $0.endTime >= Date() }
-            .sorted(by: { $0.startTime < $1.startTime })
-            .prefix(3)
-            .map { $0 }
-    }
 
     // Filters
     var selectedSports: Set<Sport> = []

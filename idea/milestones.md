@@ -1,9 +1,9 @@
-- [x] Confirm design reference + palette (Partiful + Court Orange)
+- [x] Confirm design reference + palette (Partiful + Electric Blue)
 - [ ] Seed mock data: NYC games, spots, users, regulars
 - [ ] Build Discover (map + draggable bottom-sheet list, sport filters)
 - [ ] Build Game detail (hero, attendees, sticky RSVP, share)
 - [ ] Build Host a Game (one-screen quick create)
-- [ ] Build My Games (Today / This week / Later / Past)
-- [ ] Build Profile with regular spots
-- [ ] High-converting multi-step onboarding flow
+- [ ] Build My Games (Today / This week / Past)
+- [ ] Build Profile + Spot profile with "regulars"
+- [ ] Permission-priming onboarding for location
 - [ ] Final polish pass on theme tokens + empty states
