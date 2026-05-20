@@ -62,44 +62,4 @@ Open the simulator to try it — tap "Turn on location" to get into the app.
 
 ### You
 
-make it have like a real high converting onboarding
-
----
-
-### 10x
-
-I'll build a proper high-converting multi-step flow: value prop → sports quiz → skill → vibe → neighborhood → social proof → notifications priming → location priming → analyzing → personalized reveal → name capture.
-
----
-
-### 10x
-
-Now build the multi-step onboarding flow:
-
----
-
-### 10x
-
-Let me verify it builds by checking the simulator:
-
----
-
-### 10x
-
-The simulator is still showing the cached previous build. The new flow will appear on rebuild.
-
-**High-converting onboarding now has 11 steps:**
-
-1. **Welcome** — full-bleed gradient with floating emoji pins + "Get started"
-2. **Sports** — multi-select tile grid (drives personalization)
-3. **Skill level** — chill / casual / competitive with emojis
-4. **Frequency** — how often they play (sets implicit expectations)
-5. **Neighborhood** — text input, optional
-6. **Social proof** — stats row (42K+ players, 1,800 spots, 4.9★) + two testimonials with star ratings
-7. **Notifications priming** — soft sell with 3 bulleted benefits before the OS prompt
-8. **Location priming** — same pattern, with "never shared" trust line
-9. **Analyzing** — animated progress ring with rotating status lines ("Scanning courts…", "Matching your sports…")
-10. **Personalized reveal** — "**X games this week** match what you play" with 3 real game cards from their selected sports — proves the value before asking for the name
-11. **Name capture** — "What should we call you?" with a "Now it's time to get in the game" framing line
-
-Persistent progress bar across all quiz steps, back button on every screen, sticky CTA with a fade gradient, and the user's quiz answers actually wire into the store — selected sports become the default Discover filter, and the chosen skill/name/handle update the profile.
+redo the ui, massively improve it

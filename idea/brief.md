@@ -64,8 +64,6 @@ Casual players in their 20s-40s, multi-sport (basketball-heavy, plus pickleball,
 - **Permission priming** before the OS location prompt — one custom screen explaining why Huddle needs location ("show games near you today"). Strava/AllTrails pattern.
 - No account required in v1. Local profile only.
 
-## Pre-Build Confirmation
-
 ### Selected design system
 - **Reference:** Partiful — playful, social, bold accent, emoji-friendly, casual.
 - **Palette:** Electric Blue
@@ -92,3 +90,12 @@ Casual players in their 20s-40s, multi-sport (basketball-heavy, plus pickleball,
 
 ### Explicit exclusions for v1
 League management, chat, real-time check-in, payments, recommendation algorithms, auth, push notifications.
+
+## Selected Design System
+
+- Reference: Partiful
+- Design traits: playful, social, bold color, emoji-friendly, casual
+- Catalog seed: Social Native (`social-native`)
+- Palette: Court Orange
+- Palette tokens: primary #111827, accent #F26B1F, background #FAFAF7
+- Status: selected by the user in Research.
